@@ -5,9 +5,9 @@
 Intro : exemple de découpage
 
 Index
-    - Catégories 0-n
-        - Sujets 0-n
-            - Discussions 0-n
+    - Catégories
+        - Sujets
+            - Discussions
 
 ---
 
