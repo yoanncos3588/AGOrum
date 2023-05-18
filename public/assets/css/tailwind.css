@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn-blue {
+      @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ease-in-out duration-300;
+    }
+    .btn-green {
+      @apply bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ease-in-out duration-300;
+    }
+    .label-black {
+        @apply text-stone-600 font-bold text-sm;
+    }
+    .form-row {
+        @apply flex flex-col my-2;
+    }
+    .form-row label {
+        @apply mb-2;
+    }
+    .link {
+        @apply underline hover:underline-offset-4 hover:text-blue-500
+    }
+  }

@@ -4,29 +4,17 @@ const prisma = new PrismaClient()
 
 const dataMapper = {
 
-    async main() {
-        console.log('hello');
-        const allUsers = await prisma.user.findMany()
-        console.log(allUsers)
-    },
+    async createUser(email, name, password) {
 
-    async createUser() {
         await prisma.user.create({
             data: {
-                email: 'alice@prisma.io',
-                name: 'Alice',
-                password: 'toto',
-                urlAvatar: null,
+                email: email,
+                name: name,
+                password: password,
                 role: `member`
-            },
+            }
         })
-
-
-        const allUsers = await prisma.user.findMany()
-
-        console.dir(allUsers, { depth: null })
     }
-
 }
 
 module.exports = dataMapper;
