@@ -728,11 +728,13 @@ select {
   margin-bottom: 0.5rem;
 }
 .link {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
   text-decoration-line: underline;
 }
 .link:hover {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(55 48 163 / var(--tw-text-opacity));
   text-underline-offset: 4px;
 }
 .m-0 {

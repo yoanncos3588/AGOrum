@@ -19,6 +19,6 @@
         @apply mb-2;
     }
     .link {
-        @apply underline hover:underline-offset-4 hover:text-blue-500
+        @apply text-blue-500 underline hover:underline-offset-4 hover:text-indigo-800
     }
   }
